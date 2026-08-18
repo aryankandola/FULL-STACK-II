@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+}
+
+.header p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+/* Statistics */
+
+.stats {
+  max-width: 1200px;
+  margin: 25px auto 0;
+  padding: 0 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h3 {
+  margin: 0;
+}
+
+.stat-card p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+
+/* Main */
+
+.main-container {
+  max-width: 1200px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+
+/* Add Post */
+
+.add-post-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.add-post-button {
+  background: #16a34a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-post-button:hover {
+  background: #15803d;
+}
+
+/* Calendar */
+
+.calendar-section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-heading h2 {
+  margin: 0;
+}
+
+.year-selector {
+  padding: 9px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  background: white;
+  cursor: pointer;
+}
+
+.year-selector:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.fc-event {
+  cursor: pointer;
+  padding: 3px;
+}
+
+/* Form */
+
+.form-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h2 {
+  margin-top: 0;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-card input,
+.form-card select {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Buttons */
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.cancel-button {
+  background: #64748b;
+}
+
+/* Post List */
+
+.post-list {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.post-list h2 {
+  margin-top: 0;
+}
+
+/* Post Item */
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.post-item h3 {
+  margin: 0 0 5px;
+}
+
+.post-item p {
+  margin: 4px 0;
+  color: #64748b;
+}
+
+/* Post Actions */
+
+.post-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .post-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .post-actions {
+    width: 100%;
+  }
+
+  .post-actions button {
+    flex: 1;
+  }
+
+  .add-post-container {
+    justify-content: stretch;
+  }
+
+  .add-post-button {
+    width: 100%;
+  }
+
+  .calendar-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .year-selector {
+    width: 100%;
+  }
+}
