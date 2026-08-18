@@ -1,20 +1,42 @@
-function Viewer(){
+import { useState } from "react";
+import { getContent } from "./contentService";
 
-return(
 
-<div>
+function Viewer() {
 
-<h1>
-Viewer Panel
-</h1>
+  const [content, setContent] = useState(getContent());
 
-<p>
-Viewer can only see content.
-</p>
 
-</div>
+  return (
 
-);
+    <div>
+
+      <h1>
+        Viewer Panel
+      </h1>
+
+
+      <p>
+        Viewer can only see content.
+      </p>
+
+
+      <hr />
+
+
+      <h2>
+        {content.title}
+      </h2>
+
+
+      <p>
+        {content.description}
+      </p>
+
+
+    </div>
+
+  );
 
 }
 
