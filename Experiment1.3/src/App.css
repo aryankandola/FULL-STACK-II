@@ -1,0 +1,235 @@
+/* Main container */
+
+.login-container {
+
+    width: 380px;
+
+    margin: 100px auto;
+
+    padding: 35px;
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+
+}
+
+
+/* Heading */
+
+.login-container h2 {
+
+    margin-bottom: 25px;
+
+    color: #2563eb;
+
+    font-size: 28px;
+
+}
+
+
+/* Inputs */
+
+input, select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 12px 0;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    font-size: 15px;
+
+}
+
+
+input:focus,
+select:focus {
+
+    border-color: #2563eb;
+
+}
+
+
+
+/* Buttons */
+
+button {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(37,99,235,0.4);
+
+}
+
+
+
+/* Navbar */
+
+nav {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 40px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+nav h2 {
+
+    font-size:24px;
+
+}
+
+
+
+nav div {
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:center;
+
+}
+
+
+
+nav a {
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+}
+
+
+
+nav a:hover {
+
+    color:#fde047;
+
+}
+
+
+
+/* Navbar logout button */
+
+nav button {
+
+    background:white;
+
+    color:#2563eb;
+
+    padding:8px 18px;
+
+}
+
+
+
+/* Dashboard */
+
+
+.dashboard {
+
+    margin:50px auto;
+
+    width:70%;
+
+    padding:40px;
+
+    background:white;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+
+.dashboard h1 {
+
+    color:#2563eb;
+
+    font-size:40px;
+
+}
+
+
+
+.dashboard p {
+
+    font-size:20px;
+
+    color:#555;
+
+}
+
+
+/* Register/Login link */
+
+a {
+
+    color:#2563eb;
+
+}
